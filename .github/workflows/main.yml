@@ -1,0 +1,17 @@
+name: Football Challenge 5
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le projet
+        uses: actions/checkout@v4
+
+      - name: Vérifier les fichiers
+        run: |
+          echo "Football Challenge 5"
+          ls -la
